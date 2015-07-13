@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pw.flum.was.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="メイン機" />
+
+    <Button
+        android:id="@+id/main_wol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="17dp"
+        android:text="wol" />
+
+    <Button
+        android:id="@+id/main_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/main_wol"
+        android:layout_alignBottom="@+id/main_wol"
+        android:layout_marginLeft="72dp"
+        android:layout_toRightOf="@+id/main_wol"
+        android:text="sleep" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_wol"
+        android:layout_below="@+id/main_wol"
+        android:layout_marginTop="25dp"
+        android:text="サブ機" />
+
+    <Button
+        android:id="@+id/sub_wol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="22dp"
+        android:text="wol" />
+
+    <Button
+        android:id="@+id/sub_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sub_wol"
+        android:layout_alignBottom="@+id/sub_wol"
+        android:layout_alignLeft="@+id/main_sleep"
+        android:text="sleep" />
+
+</RelativeLayout>
